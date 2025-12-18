@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математический Тремор</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+
+<body>
+    <main class="game-container">
+        <h1>Математический Тренажер</h1>
+        
+        <div class="controls">
+            <h2>Выберите уровень сложности:</h2>
+            <div id="level-selection" class="level-selection">
+                <button data-level="1" class="level-btn">Easy</button>
+                <button data-level="2" class="level-btn">Normal</button>
+                <button data-level="3" class="level-btn">Hard</button>
+                <button data-level="4" class="level-btn">Expert</button>
+            </div>
+        </div>
+        
+        <div id="game-area" class="game-area">
+            <h3 id="current-problem" class="problem-text">Нажмите на кнопку уровня, чтобы начать!</h3>
+            
+            <div class="input-group">
+                <input type="text" id="answer-input" placeholder="Ваш ответ" disabled inputmode="numeric">
+                <button id="submit-answer-btn" disabled class="submit-btn">Проверить</button>
+            </div>
+            
+            <p id="feedback-message" class="feedback-message"></p>
+        </div>
+        
+        <div class="stats">
+            <h2>Статистика</h2>
+            <p class="stat-item">Текущий счет: <span id="current-score" class="score-value">0</span></p>
+            <p class="stat-item high-score">Ваш рекорд: <span id="high-score" class="score-value">0</span></p>
+        </div>
+    </main>
+</body>
+</html>

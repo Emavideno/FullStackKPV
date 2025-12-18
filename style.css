@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.level-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.level-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    color: #495057;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+.level-btn:hover {
+    background-color: #dee2e6;
+}
+
+.level-btn.active-level {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+    transform: translateY(-2px);
+}
+
+.game-area {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.problem-text {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#answer-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#answer-input:focus:enabled {
+    border-color: #007bff;
+}
+
+#answer-input:disabled {
+    background-color: #e9ecef;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover:enabled {
+    background-color: #0056b3;
+}
+
+.submit-btn:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
+
+.feedback-message {
+    min-height: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.stats {
+    text-align: left;
+    padding: 15px;
+    border-top: 1px dashed #ced4da;
+}
+
+.stat-item {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.score-value {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.2em;
+}
+
+.high-score .score-value {
+    color: #ffc107;
+}
